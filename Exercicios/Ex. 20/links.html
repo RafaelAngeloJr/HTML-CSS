@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+        
+                # = id
+                . = class
+                : = pseudo-class
+                :: = pseudo-element
+                > = children
+
+            Algumas caracteristicas que quero guardas...
+
+            O "visited" significa um link que ja foi clickado antes (Um site/link visitado).
+            O "hover" é quando o mouse está por cima do link/conteudo.
+            O "active" é quando você mantem o mouse pressionado (O click pressionado) em determinado link/conteudo.
+
+            Agora considerando o "::" que seria o pseudo-elements, nós temos o ::before que seria um conteudo fora do html (No caso h1, h2, p, entre outros) e sempre estando antes do conteúdo, e o ::after é a mesma coisa, só que depois do conteúdo, é claro.
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: violet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: cadetblue;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(38, 0, 255);
+        }
+
+        .especial {
+            background-color: darkred;
+        }
+
+        .especial::before {
+            content: '♚';
+        }
+
+        .especial::after {
+            content: '♛';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(255, 0, 128);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pesonalizando links!</h1>
+
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório do GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+
+</body>
+</html>

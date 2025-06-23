@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(32, 30, 30);
+}
+
+h1 {
+    font-style: inherit;
+    color: antiquewhite;
+}
+
+p {
+    color: antiquewhite;
+}

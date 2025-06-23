@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+    Tudo que for ID no HTML é = a # no CSS. (Só pode um elemento)
+    Tudo que for class no HTML = a . no CSS. (Pode vários elementos)
+*/
+
+body {
+    background-color: #2F2D66;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: #413F8F;
+    color: #544EF0;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #413F8F;
+    color: #5D59CA;
+
+}
+
+h2 {
+    color: #706CF5;
+}
+
+.basico {
+    color: #3c37c9;
+    font-weight: 200;
+}
+
+.mediano {
+    color: #1c1a5f;
+    font-weight: 400;
+}
+
+.avancado {
+    color: #151358;
+    font-weight: 600;
+}
+
+.destaque {
+    background-color: rgba(100, 0, 0, 0.39);
+}

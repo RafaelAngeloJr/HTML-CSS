@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinámica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanha do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="ImagensPMG/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="ImagensPMG/foto-m.png" type="image/png">
+        <img src="ImagensPMG/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em html5</p>
+    <audio src="midia/Undertale OST_ 046 - Spear of Justice.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Fading Into Obscurity - Evening Telecast.mp3" type="audio/mpeg">
+        <source src="midia/Fading Into Obscurity - Evening Telecast.ogg" type="audio/ogg"> <!--Exemplo de ogg-->
+        <source src="midia/Fading Into Obscurity - Evening Telecast.wav" type="audio/wav"> <!--Exemplo de wav-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Undertale OST_ 046 - Spear of Justice.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
